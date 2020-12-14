@@ -1,0 +1,23 @@
+[
+  {
+    "title": "First Look",
+    "subHeading": "'I have never seen her more beautiful' - Kenneth",
+    "img": "./images/first-look.jpg",
+    "img_alt": "Erika pinning a boutonnière on Kenneth",
+    "slug": "first-look"
+  },
+  {
+    "title": "Ceremony",
+    "subHeading": "October 1, 2020 - Idyllwild, California",
+    "img": "./images/ceremony.jpg",
+    "img_alt": "Wide shot of the 16 seated guests viewing Erika and Ken at the alter",
+    "slug": "ceremony"
+  },
+  {
+    "title": "Reception",
+    "subHeading": "A vision materialized into a beautiful reality",
+    "img": "./images/reception.jpg",
+    "img_alt": "Erika and Ken sitting at their table",
+    "slug": "reception"
+  }
+]
