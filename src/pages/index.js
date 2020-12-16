@@ -164,9 +164,9 @@ const IndexPage = ({ data }) => (
             width="1920"
             height="1080"
             src="https://www.youtube.com/embed/2x7RH4tt3nk?rel=0"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>

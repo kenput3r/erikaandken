@@ -63,13 +63,16 @@ const Header = ({ page }) => {
             <Link to="/">Home</Link>
           </li>
           <li className={page === `First Look` ? `active` : ``}>
-            <Link to="/">First Look</Link>
+            <Link to="/first-look">First Look</Link>
           </li>
           <li className={page === `Ceremony` ? `active` : ``}>
-            <Link to="/">Ceremony</Link>
+            <Link to="/ceremony">Ceremony</Link>
+          </li>
+          <li className={page === `Ceremony` ? `active` : ``}>
+            <Link to="/family-photos">Family Photos</Link>
           </li>
           <li className={page === `Reception` ? `active` : ``}>
-            <Link to="/">Reception</Link>
+            <Link to="/reception">Reception</Link>
           </li>
         </ul>
       </nav>
