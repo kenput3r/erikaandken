@@ -26,3 +26,10 @@
   font-display: swap;
   src: url("/fonts/Pacifico-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "La Belle Aurore";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/LaBelleAurore-Regular.ttf") format("truetype");
+}

@@ -2,7 +2,7 @@
   --primary-light: #aac3b1;
   --primary-medium: #6a7a6e;
   --primary-dark: #505b53;
-  --title-font: "Pacifico";
+  --title-font: "La Belle Aurore";
   --body-font: "Open Sans";
 }
 html {
@@ -91,7 +91,7 @@ h1 {
   font-family: var(--title-font);
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 3rem;
   line-height: 1.1;
 }
 mark {
@@ -594,5 +594,8 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+  body .image-container {
+    max-width: 95vw !important;
   }
 }

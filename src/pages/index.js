@@ -69,6 +69,9 @@ const Page = styled.div`
       text-decoration: none;
     }
   }
+  h2 {
+    font-size: 3rem;
+  }
   .img-container,
   .details {
     padding: 15px;
@@ -167,6 +170,7 @@ const IndexPage = ({ data }) => (
             frameBorder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            title="Erika's and Ken's Wedding"
           ></iframe>
         </div>
       </div>

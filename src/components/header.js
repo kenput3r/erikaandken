@@ -16,10 +16,11 @@ const Component = styled.header`
   ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
     max-width: 60vw;
-    @media (max-width: 500px) {
+    @media (max-width: 991px) {
       max-width: 100%;
     }
   }
@@ -27,7 +28,7 @@ const Component = styled.header`
     list-style-type: none;
     margin-bottom: 0;
     &.active {
-      @media (max-width: 369px) {
+      @media (max-width: 500px) {
         display: none;
       }
     }
@@ -36,6 +37,10 @@ const Component = styled.header`
       padding: 5px 10px;
       font-weight: bold;
       text-decoration: none;
+      @media (max-width: 500px) {
+        display: block;
+        padding: 10px 10px;
+      }
     }
   }
 `
@@ -55,9 +60,11 @@ const Header = ({ page }) => {
   return (
     <Component>
       <div className="logo-container">
-        <Img fluid={data.logo.childImageSharp.fluid} alt="Erika And Ken" />
+        <Link to="/" title="Home">
+          <Img fluid={data.logo.childImageSharp.fluid} alt="Erika And Ken" />
+        </Link>
       </div>
-      <nav role="Primary">
+      <nav aria-label="Primary">
         <ul>
           <li className={page === `Home` ? `active` : ``}>
             <Link to="/">Home</Link>
@@ -68,8 +75,8 @@ const Header = ({ page }) => {
           <li className={page === `Ceremony` ? `active` : ``}>
             <Link to="/ceremony">Ceremony</Link>
           </li>
-          <li className={page === `Ceremony` ? `active` : ``}>
-            <Link to="/family-photos">Family Photos</Link>
+          <li className={page === `Family Photos` ? `active` : ``}>
+            <Link to="/family-photos">Family</Link>
           </li>
           <li className={page === `Reception` ? `active` : ``}>
             <Link to="/reception">Reception</Link>

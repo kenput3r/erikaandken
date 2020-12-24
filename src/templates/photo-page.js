@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
@@ -14,6 +14,10 @@ const Page = styled.div`
     align-items: center;
     min-height: 40vh;
     width: 100%;
+    text-align: center;
+    @media (max-width: 500px) {
+      min-height: 30vh;
+    }
   }
   .image-container {
     max-width: 60vw;
@@ -21,19 +25,17 @@ const Page = styled.div`
   }
 `
 
-const Reception = ({ data }) => {
-  const images = data.allReceptionJson.edges[0].node.images
+const PhotoPage = ({ data }) => {
+  const page = data.allPagesJson.edges[0].node
+  const images = page.images
   return (
-    <Layout>
-      <SEO title="Reception" />
+    <Layout page={page.title}>
+      <SEO title={page.title} />
       <Page>
-        <h1>Photos From The Reception</h1>
+        <h1>{page.heading}</h1>
         {images.map(image => (
           <div className="image-container" key={image.id}>
-            <Img
-              fluid={image.childImageSharp.fluid}
-              alt="Erika's and Ken's Reception, Idyllwild, California"
-            />
+            <Img fluid={image.childImageSharp.fluid} alt={page.altText} />
           </div>
         ))}
       </Page>
@@ -41,13 +43,15 @@ const Reception = ({ data }) => {
   )
 }
 
-export default Reception
+export default PhotoPage
 
 export const query = graphql`
-  query ReceptionQuery {
-    allReceptionJson {
+  query PhotoPageQuery($slug: String) {
+    allPagesJson(filter: { slug: { eq: $slug } }) {
       edges {
         node {
+          altText
+          title
           images {
             id
             childImageSharp {
@@ -56,6 +60,7 @@ export const query = graphql`
               }
             }
           }
+          heading
         }
       }
     }
