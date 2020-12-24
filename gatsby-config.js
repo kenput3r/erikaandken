@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Erika And Ken`,
     description: `A wedding website built for remember a very special day.`,
-    author: `@kenputer`,
+    author: `@kenput3r`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,11 +13,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `./data/`,
+        path: `${__dirname}/data/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -35,8 +36,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

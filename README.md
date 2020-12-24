@@ -26,7 +26,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-0.  **`data`**: This directory contains data to be sourced using graphql.
+0.  **`/data`**: This directory contains data to be sourced using graphql.
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 

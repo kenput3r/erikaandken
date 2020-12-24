@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Pacifico-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "La Belle Aurore";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/LaBelleAurore-Regular.ttf") format("truetype");
+}
