@@ -102,11 +102,12 @@ const Page = styled.div`
   }
   .video-container {
     position: relative;
-    margin: 5rem auto 0;
+    margin: 5rem auto;
     max-width: 60vw;
     width: 60vw;
     @media (max-width: 767px) {
       margin-top: 0;
+      margin-bottom: 0;
       max-width: 100%;
       width: 100%;
     }
@@ -132,7 +133,7 @@ const IndexPage = ({ data }) => (
     <Page>
       <div className="hero-container">
         <Img
-          fluid={data.heroImage.childImageSharp.fluid}
+          fluid={data.heroImage2.childImageSharp.fluid}
           alt="Erika and Ken walking down isle holding hands"
         />
       </div>
@@ -183,6 +184,13 @@ export default IndexPage
 export const query = graphql`
   query HomePageQuery {
     heroImage: file(relativePath: { eq: "just-married.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2048) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    heroImage2: file(relativePath: { eq: "erika-and-ken-2020.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2048) {
           ...GatsbyImageSharpFluid

@@ -1,7 +1,7 @@
 [
   {
     "title": "First Look",
-    "subHeading": "'I have never seen her more beautiful' - Kenneth",
+    "subHeading": "'I have never seen her more beautiful' -Kenneth",
     "img": "./images/first-look.jpg",
     "img_alt": "Erika pinning a boutonnière on Kenneth",
     "slug": "first-look"
@@ -15,7 +15,7 @@
   },
   {
     "title": "Reception",
-    "subHeading": "A vision materialized into a beautiful reality",
+    "subHeading": "Designed by Erika & Priscilla",
     "img": "./images/reception.jpg",
     "img_alt": "Erika and Ken sitting at their table",
     "slug": "reception"
