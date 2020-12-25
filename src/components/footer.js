@@ -58,7 +58,9 @@ const Footer = () => {
       </div>
       <p>
         © {new Date().getFullYear()}{" "}
-        <a href="https://github.com/kenput3r">@kenput3r</a>
+        <a href="https://github.com/kenput3r" target="_blank" rel="noreferrer">
+          @kenput3r
+        </a>
       </p>
     </Component>
   )
