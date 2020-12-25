@@ -19,5 +19,12 @@
     "img": "./images/reception.jpg",
     "img_alt": "Erika and Ken sitting at their table",
     "slug": "reception"
+  },
+  {
+    "title": "Family Photos",
+    "subHeading": "The joining of familys",
+    "img": "./images/family-photos.jpg",
+    "img_alt": "Collage of family photos",
+    "slug": "family-photos"
   }
 ]
